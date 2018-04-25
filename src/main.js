@@ -2,33 +2,23 @@ import $ from 'jquery';
 import 'bootstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './styles.css';
-
+import {BikeApi} from './BikeApi.js';
 
 $(document).ready(function(){
   $("#bikeLocation").click(function(){
     let city = $("#location").val();
+    let stoleness = $("#checkBox").val();
     $("#location").val("");
+    $("#checkBox").val("");
     console.log($("#location").val());
-
-    let promise = new Promise(function(resolve, reject){
-      let request = new XMLHttpRequest();
-      let url = `https://bikeindex.org:443/api/v3/search?location=${city}&distance=10&stolenness=proximity`;
-      request.onload = function(){
-        if(this.status === 200){
-          resolve(request.response);
-        } else {
-          reject(Error(request.statusText));
-        }
-      }
-      request.open("GET", url, true);
-      request.send();
-    });
+    let bikeApi = new BikeApi();
+    let promise = bikeApi.bikePromise(city, stoleness);
 
     promise.then(function(response){
       let body = JSON.parse(response);
       let i;
       for(i = 0; i <= body.bikes.length; i++){
-        $(".showBikes").append(`${body.bikes[i].frame_model}` + "<br>");
+        $(".showBikes").append(`${body.bikes[i].title}` + "<br>");
       }
     }, function(error){
       $('.showErrors').text(`There was an error processing your request: ${error.message}`);
