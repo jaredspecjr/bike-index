@@ -23,7 +23,7 @@ module.exports = {
     new UglifyJsPlugin({ sourceMap: true }),
     new CleanWebpackPlugin(['dist']),
     new HtmlWebpackPlugin({
-      title: 'bik-index',
+      title: 'bike-index',
       template: './src/index.html',
       inject: 'body'
     })
