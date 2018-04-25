@@ -12,9 +12,9 @@ This webpage will allow a user to ... more detailed.
 
 | Specification | Input | Output |
 | --- | --- | --- |
-| The program will subtract from tamagotchi's food, rest and play values over an interval of time| Input: food level: 10, 10 seconds | Output: food level: 9 |
-| The program will add to tamagotchi's food, rest and play values when prompted| Input: user clicks corresponding button, food level: 3 | Output: food level: 10 |
-| The program will determine if any of the tamagotchi's levels have reached zero| Input: food level: 1, play level: 2, rest level: 0 | Output: Your Tamagotchi is dead. |
+| list stolen bikes in a given location | portland | list of stolen bikes in portland |
+| list bikes in the past week | portland | only shows bikes in portland in the past week that have been stolen |
+
 
 
 ## Setup/Installation Requirements
