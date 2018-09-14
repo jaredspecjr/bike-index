@@ -1,6 +1,6 @@
-# Project Name
+# Bike Index
 
-#### A brief program description
+
 
 #### By _**Jared Lutz**_
 
