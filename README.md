@@ -2,11 +2,11 @@
 
 #### A brief program description
 
-#### By _**name**_
+#### By _**Jared Lutz**_
 
 ## Description
 
-This webpage will allow a user to ... more detailed.
+This webpage will allow the user to search for bikes in a given area base on all bikes registered by users in that area or only stolen bikes reported by users.
 
 #### Specifications
 
@@ -20,7 +20,9 @@ This webpage will allow a user to ... more detailed.
 ## Setup/Installation Requirements
 
 * Install program by cloning this repository.
-* Open index.html in browser.
+* In terminal run npm install.
+* Then run npm run start
+* application must be ran in chrome with a CORS compliant plugin
 
 ## Known Bugs
 
@@ -29,7 +31,7 @@ N/A
 ## Support and contact details
 
 For Support, contact:
-N/A
+jaredspecjr@gmail.com
 
 ## Technologies Used
 
@@ -50,4 +52,4 @@ The copyright notice and this permission notice shall be included in all copies 
 
 THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 
-Copyright (c) 2018 **name**
+Copyright (c) 2018 **Jared Lutz**
